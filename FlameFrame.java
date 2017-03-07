@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JToolBar;
 import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
 public class FlameFrame extends JFrame {
 
@@ -63,6 +65,13 @@ public class FlameFrame extends JFrame {
 		JButton btnViolet = new JButton("Magenta");
 		toolBar.add(btnViolet);
 		btnViolet.setBackground(Color.MAGENTA);
+		
+		JPanel panel = new JPanel();
+		contentPane.add(panel, BorderLayout.CENTER);
+		
+		JLabel lblNewLabel = new JLabel("The Wizard Will Light Your Flame");
+		lblNewLabel.setIcon(new ImageIcon("S:\\EclipseEnv\\FlameApp\\src\\Images\\ProfileIcon936_Poro_Wizard_1.png"));
+		panel.add(lblNewLabel);
 	}
 
 }
