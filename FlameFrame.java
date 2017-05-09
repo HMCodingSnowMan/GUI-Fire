@@ -1,16 +1,7 @@
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JToolBar;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
-import javax.swing.JTextField;
-import javax.swing.JTextPane;
 
 public class FlameFrame extends JFrame {
 
@@ -51,6 +42,12 @@ public class FlameFrame extends JFrame {
 		JButton btnRed = new JButton("Red");
 		toolBar.add(btnRed);
 		btnRed.setBackground(Color.RED);
+		btnRed.addActionListener(new ActionListener()
+			{
+			public void actionPerformed(ActionEvent e){
+				System.out.println("IAMRED");
+				}
+			});
 		
 		JButton btnBlue = new JButton("Blue");
 		toolBar.add(btnBlue);
